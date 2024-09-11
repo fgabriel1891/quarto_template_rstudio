@@ -41,14 +41,28 @@
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
+\makeatletter
 \ifx\paragraph\undefined\else
   \let\oldparagraph\paragraph
-  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
 \fi
 \ifx\subparagraph\undefined\else
   \let\oldsubparagraph\subparagraph
-  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
+\makeatother
 
 
 \providecommand{\tightlist}{%
@@ -160,6 +174,7 @@
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
+
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -178,6 +193,7 @@ specialization, Seed dispersal},
   citecolor={Blue},
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
+
 
 \journalname{Manuscript in Progress}
 
@@ -256,6 +272,7 @@ and leads to more specialized ecological networks. The results suggest
 that climate change could disproportionately impact specialist species
 and increase FTA, altering the structure of species interactions in
 these ecosystems.
+
 
 
 
@@ -884,11 +901,11 @@ insular regions where trophic communities are often subject to
 asymmetric filtering strengths have shown that the specialization of
 mutualistic networks can indeed be resilient to shifts in the degree of
 ecological filters between trophic levels. Particularly, if the networks
-are well supported by generalist species (Schleuning et al., 2012 ;
-Schleuning et al., 2016). It is therefore critical to consider changes
-in the underlying network structure when evaluating potential effects
-that climate-driven species or species trait losses have in ecosystem
-function Classen et al. (2020)
+are well supported by generalist species (Schleuning et al., 2012,
+2016). It is therefore critical to consider changes in the underlying
+network structure when evaluating potential effects that climate-driven
+species or species trait losses have in ecosystem function Classen et
+al. (2020)
 
 We validated the statistic significance of the model parameters through
 null simulations of network assembly,. However, it is noteworthy that
@@ -1194,7 +1211,7 @@ correspond to the standard error.
 \end{minipage}
 
 \textsubscript{Source:
-\href{https://fgabriel1891.github.io/quarto_template_rstudio/index-preview.html}{Article
+\href{https://fgabriel1891.github.io/quarto_template_rstudio/index.qmd.html}{Article
 Notebook}}
 
 Table 2: Linear regression analysis of the relationship between
@@ -1218,7 +1235,7 @@ correspond to the standard error.
 \end{minipage}
 
 \textsubscript{Source:
-\href{https://fgabriel1891.github.io/quarto_template_rstudio/index-preview.html}{Article
+\href{https://fgabriel1891.github.io/quarto_template_rstudio/index.qmd.html}{Article
 Notebook}}
 
 \section{References}\label{references}
@@ -1906,6 +1923,7 @@ Data is open-source, digitally available at their respective sources.
 Statement}\label{conflict-of-interest-statement}
 
 The authors declare no conflict of interest.
+
 
 
 

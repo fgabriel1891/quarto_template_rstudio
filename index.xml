@@ -102,10 +102,10 @@ administration</role>
 <corresp id="cor-1">gabrielmunoz1891@gmail.com</corresp>
 </author-notes>
 
-<pub-date date-type="pub" publication-format="electronic" iso-8601-date="2024-09-10">
+<pub-date date-type="pub" publication-format="electronic" iso-8601-date="2024-09-11">
 <year>2024</year>
 <month>9</month>
-<day>10</day>
+<day>11</day>
 </pub-date>
 
 
@@ -940,12 +940,12 @@ trophic asymmetry in ecological networks.</p>
   trophic levels. Particularly, if the networks are well supported by
   generalist species
   (<xref alt="Schleuning et al. 2012" rid="ref-schleuning2012specialization" ref-type="bibr">Schleuning
-  et al. 2012</xref> ;
-  <xref alt="Schleuning et al. 2016" rid="ref-schleuning2016ecological" ref-type="bibr">Schleuning
-  et al. 2016</xref>). It is therefore critical to consider changes in
-  the underlying network structure when evaluating potential effects
-  that climate-driven species or species trait losses have in ecosystem
-  function Classen et al.
+  et al. 2012</xref>,
+  <xref alt="2016" rid="ref-schleuning2016ecological" ref-type="bibr">2016</xref>).
+  It is therefore critical to consider changes in the underlying network
+  structure when evaluating potential effects that climate-driven
+  species or species trait losses have in ecosystem function Classen et
+  al.
   (<xref alt="2020" rid="ref-classen2020specialization" ref-type="bibr">2020</xref>)</p>
   <p>We validated the statistic significance of the model parameters
   through null simulations of network assembly,. However, it is
@@ -4148,7 +4148,7 @@ trophic asymmetry in ecological networks.</p>
 </ref-list>
 </back>
 
-<sub-article article-type="notebook" id="nb-7-nb-article">
+<sub-article article-type="notebook" id="nb-19-nb-article">
 <front-stub>
 <title-group>
 <article-title>Distinct functional responses of consumers and their
@@ -5038,12 +5038,12 @@ trophic asymmetry in ecological networks.</p>
   trophic levels. Particularly, if the networks are well supported by
   generalist species
   (<xref alt="Schleuning et al. 2012" rid="ref-schleuning2012specialization-nb-article" ref-type="bibr">Schleuning
-  et al. 2012</xref> ;
-  <xref alt="Schleuning et al. 2016" rid="ref-schleuning2016ecological-nb-article" ref-type="bibr">Schleuning
-  et al. 2016</xref>). It is therefore critical to consider changes in
-  the underlying network structure when evaluating potential effects
-  that climate-driven species or species trait losses have in ecosystem
-  function Classen et al.
+  et al. 2012</xref>,
+  <xref alt="2016" rid="ref-schleuning2016ecological-nb-article" ref-type="bibr">2016</xref>).
+  It is therefore critical to consider changes in the underlying network
+  structure when evaluating potential effects that climate-driven
+  species or species trait losses have in ecosystem function Classen et
+  al.
   (<xref alt="2020" rid="ref-classen2020specialization-nb-article" ref-type="bibr">2020</xref>)</p>
   <p>We validated the statistic significance of the model parameters
   through null simulations of network assembly,. However, it is
@@ -5147,10 +5147,13 @@ trophic asymmetry in ecological networks.</p>
   Statistically significant effects (p&lt;0.05) are marked with (*).
   Beta correspond to the variable effect coefficient in the model and SE
   correspond to the standard error.</p>
-  <sec id="nb-code-cell-1-nb-article" specific-use="notebook-code">
+  <sec specific-use="notebook-content">
   <code language="r script">#| title
 
 library(gtsummary)</code>
+  <boxed-text>
+    <preformat>Warning: package 'gtsummary' was built under R version 4.3.3</preformat>
+  </boxed-text>
   <code language="r script">mymod &lt;- readRDS(&quot;C:/Users/gabri/Documents/PhD/00_Chapter_palms_mammal_interactions/R-analisis/00_Data/04_models/lm_asym_all.RDS&quot;)
 
 gtsummary::tbl_regression(mymod, 
@@ -6465,16 +6468,13 @@ gtsummary::tbl_regression(mymod,
       </tbody>
     </table>
   </table-wrap>
-  <sec id="nb-code-cell-1-output-0-nb-article" specific-use="notebook-output">
-  <preformat>Warning: package 'gtsummary' was built under R version 4.3.3</preformat>
-  </sec>
   </sec>
   <p>Table 2: Linear regression analysis of the relationship between
   Functional Trophic Asymmetry and Network Specialization. Statistically
   significant effects (p&lt;0.05) are marked with (*). Beta correspond
   to the variable effect coefficient in the model and SE correspond to
   the standard error.</p>
-  <sec id="nb-code-cell-2-nb-article" specific-use="notebook-code">
+  <sec specific-use="notebook-content">
   <code language="r script">mymod &lt;- readRDS(&quot;C:/Users/gabri/Documents/PhD/00_Chapter_palms_mammal_interactions/R-analisis/00_Data/04_models/obs_model1.RDS&quot;)
 
 gtsummary::tbl_regression(mymod, label = list('mean_fta' = &quot;FTA (mean)&quot;,
@@ -8279,10 +8279,10 @@ gtsummary::tbl_regression(mymod, label = list('mean_fta' = &quot;FTA (mean)&quot
 
 
 </sub-article>
-<!-- (F2ED4C6E)[nb-1]:C:\Users\gabri\Documents\PhD\00_Chapter_palms_mammal_interactions\JGEB_submission\FunctionalTrophicAsymmetry\manuscript_notebook\quarto_manuscript\quarto_template_rstudio\notebooks\00_data_import.qmd -->
-<!-- (F2ED4C6E)[nb-2]:C:\Users\gabri\Documents\PhD\00_Chapter_palms_mammal_interactions\JGEB_submission\FunctionalTrophicAsymmetry\manuscript_notebook\quarto_manuscript\quarto_template_rstudio\notebooks\01_downscalling_networks.qmd -->
-<!-- (F2ED4C6E)[nb-3]:C:\Users\gabri\Documents\PhD\00_Chapter_palms_mammal_interactions\JGEB_submission\FunctionalTrophicAsymmetry\manuscript_notebook\quarto_manuscript\quarto_template_rstudio\notebooks\02_Compute_FTA.qmd -->
-<!-- (F2ED4C6E)[nb-4]:C:\Users\gabri\Documents\PhD\00_Chapter_palms_mammal_interactions\JGEB_submission\FunctionalTrophicAsymmetry\manuscript_notebook\quarto_manuscript\quarto_template_rstudio\notebooks\03_Model_FTA_climate.qmd -->
-<!-- (F2ED4C6E)[nb-5]:C:\Users\gabri\Documents\PhD\00_Chapter_palms_mammal_interactions\JGEB_submission\FunctionalTrophicAsymmetry\manuscript_notebook\quarto_manuscript\quarto_template_rstudio\notebooks\04_FTA_H2_model.qmd -->
+<!-- (F2ED4C6E)[nb-1]:/home/runner/work/quarto_template_rstudio/quarto_template_rstudio/notebooks/04_FTA_H2_model.qmd -->
+<!-- (F2ED4C6E)[nb-2]:/home/runner/work/quarto_template_rstudio/quarto_template_rstudio/notebooks/01_downscalling_networks.qmd -->
+<!-- (F2ED4C6E)[nb-3]:/home/runner/work/quarto_template_rstudio/quarto_template_rstudio/notebooks/00_data_import.qmd -->
+<!-- (F2ED4C6E)[nb-4]:/home/runner/work/quarto_template_rstudio/quarto_template_rstudio/notebooks/03_Model_FTA_climate.qmd -->
+<!-- (F2ED4C6E)[nb-5]:/home/runner/work/quarto_template_rstudio/quarto_template_rstudio/notebooks/02_Compute_FTA.qmd -->
 
 </article>
